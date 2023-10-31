@@ -1,3 +1,13 @@
+/**
+ * 
+ * https://styled-components.com - design system: reutilizar componentes de design
+ * 
+ * Ajudou muito a entender sobre o styled Components - https://www.youtube.com/watch?v=Mp1NphMm7YU
+ * 
+ * 
+ * 
+ */
+
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.button`
@@ -10,7 +20,9 @@ export const ButtonContainer = styled.button`
     color: #A8DADC;
     font-size: 24px;
     font-weight: 700;
-    flex: 1;
+    flex: ${
+        props => (props.isButtonTwoBlocks===true ? "2 44px" : "1")
+    };
 
     &:hover {
         opacity: 0.6;

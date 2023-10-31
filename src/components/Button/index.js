@@ -1,12 +1,11 @@
-import { ButtonContainer } from './styles';
+import { ButtonContainer } from "./styles";
 
-const Button = ( {label, onClick} ) => {
-    return (
-      <ButtonContainer onClick={onClick}>
-        {label}
-      </ButtonContainer>
-    );
-  }
-  
-  export default Button;
-  
+const Button = ({label, onClick, isButtonTwoBlocks }) => {
+  return (
+    <ButtonContainer isButtonTwoBlocks={isButtonTwoBlocks} onClick={onClick}>
+      {label}
+    </ButtonContainer>
+  );
+};
+
+export default Button;

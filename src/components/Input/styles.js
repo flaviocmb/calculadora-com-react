@@ -6,9 +6,6 @@ export const InputContainer = styled.div`
     // background-color: #AAAAFF;
     // background-color: #2A9D8F;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 24px;
     font-family: 'Roboto';
 
     input {
@@ -20,10 +17,10 @@ export const InputContainer = styled.div`
         color: #E63946;
         border: 0;
         padding: 0 10px;
-        float: right;
+        text-align: right;
         clear: both;
 
-        font-size: 24px;
+        font-size: 32px;
         font-family: 'Roboto';
     }
 `
